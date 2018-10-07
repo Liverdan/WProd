@@ -1,0 +1,81 @@
+/*
+Theme Name:Oblique child
+Description: Thème enfant pour le thème Oblique
+Author: Pierre vanlierde
+Version:0.1.2
+Template:oblique
+ */
+@import url("../oblique/style.css");
+
+h2,
+h3,
+h5{
+    color: #dddddd;
+}
+
+.form-content{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+#sortable{
+    padding:4px;
+    border:yellow 1px solid;
+    width: 60%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+ul#sortable li{
+    display:inherit;
+    list-style:none;    
+    width: 98%;
+    padding: 2px;
+}
+ul#sortable li.fantom{
+    margin:2px;
+    height:31px;
+    border:white solid 1px;
+    background-color: grey;
+}
+ul#sortable li input[type="button"]{
+    padding: 2px;
+    cursor:default;
+}
+.btnCat{
+    margin-right: 1em;
+    margin-left: 1em;
+    flex:1 1 50%;
+    border-radius: 4px;
+}
+ul#sortable li input[type="button"]:hover{
+    background-color: #dd9933;    
+}
+#fleche{
+    color:#DD9933;
+}
+
+ul#sortable .fas{
+    float: left;
+    cursor: grab;
+    margin-top: .5em;
+    color: #dd9933;
+}
+.ui-button{
+    padding: 5px;
+    border: solid 1px #dd9933;
+}
+form label{
+    color:white;
+    
+}
+.nav-previous,
+.nav-next{
+    border: solid 1px #dd9933;
+    border-radius: 4px;
+    background-color: #23b6b6;
+}
